@@ -9,8 +9,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <PostBuildEvent>del /f /q C:\Users\Jonathan\Desktop\Z\zzzproject\HtmlAgilityPack\Solutions\..\Nuget\lib\NetStandard1_3\*
-copy "Html*.*" C:\Users\Jonathan\Desktop\Z\zzzproject\HtmlAgilityPack\Solutions\..\Nuget\lib\NetStandard1_3\*</PostBuildEvent>
     <PackageId>HtmlAgilityPack</PackageId>
     <Version>1.5.6</Version>
     <Authors>ZZZ Projects Inc.</Authors>
