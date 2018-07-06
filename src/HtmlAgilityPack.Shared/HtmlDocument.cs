@@ -34,7 +34,9 @@ namespace HtmlAgilityPack
         private static int _maxDepthLevel = int.MaxValue;
 
         private int _c;
+#pragma warning disable 618
         private Crc32 _crc32;
+#pragma warning restore 618
         private HtmlAttribute _currentattribute;
         private HtmlNode _currentnode;
         private Encoding _declaredencoding;
@@ -1196,7 +1198,9 @@ namespace HtmlAgilityPack
             int lastquote = 0;
             if (OptionComputeChecksum)
             {
+#pragma warning disable CS0618 // Type or member is obsolete
                 _crc32 = new Crc32();
+#pragma warning restore CS0618 // Type or member is obsolete
             }
 
             Lastnodes = new Dictionary<string, HtmlNode>();

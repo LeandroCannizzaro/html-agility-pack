@@ -14,7 +14,7 @@ namespace HtmlAgilityPack
     /// </summary>
     [System.Obsolete("This type should not be used; it is intended for internal use in HTML Agility Pack.")]
 #if !NETSTANDARD || WINDOWS_UWP
-    [CLSCompliant(false)]
+  //  [CLSCompliant(false)]
 #endif
     public class Crc32
     {

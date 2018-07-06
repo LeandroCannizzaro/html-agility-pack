@@ -910,13 +910,13 @@ namespace HtmlAgilityPack
         #endregion
 
         #region Public Methods
-#if !NETSTANDARD
-/// <summary>
-/// Gets the MIME content type for a given path extension.
-/// </summary>
-/// <param name="extension">The input path extension.</param>
-/// <param name="def">The default content type to return if any error occurs.</param>
-/// <returns>The path extension's MIME content type.</returns>
+#if false //!NETSTANDARD
+        /// <summary>
+        /// Gets the MIME content type for a given path extension.
+        /// </summary>
+        /// <param name="extension">The input path extension.</param>
+        /// <param name="def">The default content type to return if any error occurs.</param>
+        /// <returns>The path extension's MIME content type.</returns>
         public static string GetContentTypeForExtension(string extension, string def)
         {
             var helper = new PermissionHelper();
@@ -2006,8 +2006,9 @@ namespace HtmlAgilityPack
 #if !NETSTANDARD
         private bool IsCacheHtmlContent(string path)
         {
-            string ct = GetContentTypeForExtension(Path.GetExtension(path), null);
-            return IsHtmlContent(ct);
+         //   string ct = GetContentTypeForExtension(Path.GetExtension(path), null);
+           // return IsHtmlContent(ct);
+            return false;
         }
 #endif
 
@@ -2480,7 +2481,7 @@ namespace HtmlAgilityPack
         #endregion
     }
 
-#if !NETSTANDARD
+#if false //!NETSTANDARD
 /// <summary>
 /// Wraps getting AppDomain permissions
 /// </summary>
