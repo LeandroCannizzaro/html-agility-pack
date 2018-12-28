@@ -30,6 +30,8 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
   <Import Project="..\HtmlAgilityPack.Shared\HtmlAgilityPack.Shared.projitems" Label="Shared" />
